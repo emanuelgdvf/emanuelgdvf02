@@ -11,3 +11,7 @@ Este é o meu segundo site ultilizando HTML e CSS, aliás, foi ultilizado para u
 ## 📸 Preview
 <img width="1366" height="768" alt="Captura de Tela (50)" src="https://github.com/user-attachments/assets/552d4b94-a9ba-43c9-aecc-fc205c6f0d92" />
 
+## Licença
+
+Este projeto está sob a licença MIT.
+
