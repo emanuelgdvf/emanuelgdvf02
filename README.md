@@ -9,7 +9,7 @@ Este é o meu segundo site ultilizando HTML,CSS e JavaScript. Começando a usar 
 - CSS
 - JavaScript
 ## 📸 Preview
-<img width="1366" height="768" alt="Captura de Tela (50)" src="https://github.com/user-attachments/assets/552d4b94-a9ba-43c9-aecc-fc205c6f0d92" />
+<img width="1366" height="768" alt="Captura de Tela (82)" src="https://github.com/user-attachments/assets/50783e16-ca59-49e9-97b4-0042ee97ef88" />
 
 ## MIT License
 
