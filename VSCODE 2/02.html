@@ -1,204 +1,260 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="icon" type="jpg" href="02.ico">
-    <meta charset="UTF-8">
-    <title>Guia Apodi Connect</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAC — Guia Apodi Connect</title>
+  <link rel="icon" type="image/x-icon" href="02.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <style>
-        
-body {
-    background-color: rgb(19, 17, 17);
-    color: white;
-}
-a{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
-    color: rgb(26, 66, 243);
-    text-decoration: none;
-}
-a:hover{
-    color: rgb(51,102,204);
-    text-decoration: underline;
-}
-header {
-    background-color: rgb(27, 177, 64);
-    color: white;
-}
-header h1{
-font-size: 60px;
-text-align: center;
-letter-spacing: 1px;
-padding: 10px;
-}
-header {
-  animation: aparecer 3s ease-in-out;
-}
-</style>
-    <header>
-        <h1>Bem-vindo ao Guia Apodi Connect-RN</h1>
-        <hr>
-    </header>
-    <section>
-        <h1>Sobre:</h1>
-         <div class="conteudo"></div>   <p>
-     O Guia Apodi Connect é um site criado para dar visibilidade aos comércios da cidade de Apodi-RN.<br>
-    A plataforma reúne diversos estabelecimentos locais, como restaurantes, supermercados, serviços<br>
-    e lojas de materiais de construção, facilitando para que moradores e visitantes encontrem<br>
-    rapidamente informações e acessem as redes sociais desses negócios. O objetivo é fortalecer<br>
-     o comércio local e aproximar a população dos empreendimentos da cidade.
-  </p>
-</div>
+
+<nav class="sticky-nav" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">
+      <span class="brand-badge">GAC</span>
+      <span class="brand-name">Guia Apodi Connect</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#catalogo" class="nav-link">🍽️ O que comer?</a></li>
+      <li><a href="#restaurantes" class="nav-link" data-section="restaurantes">Restaurantes</a></li>
+      <li><a href="#supermercados" class="nav-link" data-section="supermercados">Supermercados</a></li>
+      <li><a href="#servicos" class="nav-link" data-section="servicos">Serviços</a></li>
+      <li><a href="#construcao" class="nav-link" data-section="construcao">Construção</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-  <div class="box">
-<p>.</p>
-</div>
-    <h2>Seções:<h2>
-  <nav>
-    <ul>
-<li><a href="#restaurantes">Restaurantes</a></li>
-<li><a href="#supermercados">Supermercados</a></li>
-<li><a href="#servicos">Serviços</a></li>
-<li><a href="#construcao">Material de Construção</a></li>
-</ul>
-<div class="box">
-<p>.</p>
-</div>
+  <div class="nav-mobile" id="mobileMenu">
+    <a href="#catalogo" class="nav-link-mobile">🍽️ O que comer?</a>
+    <a href="#restaurantes" class="nav-link-mobile">Restaurantes</a>
+    <a href="#supermercados" class="nav-link-mobile">Supermercados</a>
+    <a href="#servicos" class="nav-link-mobile">Serviços</a>
+    <a href="#construcao" class="nav-link-mobile">Construção</a>
+  </div>
 </nav>
 
-<h2 id="restaurantes">Restaurantes/Petiscarias:</h2>
-<ul>
-<li><a href="https://www.instagram.com/palheirosrestaurante?igsh=ODV2bmViZDRiNDNq" target="_blank">Palheiros</a></li>
-
-<li><a href="https://www.instagram.com/espetodeouro_" target="_blank">Espeto de Ouro</a></li>
-
-<li><a href="https://www.instagram.com/aabbapodi" target="_blank">AABB</a></li>
-
-<li><a href="https://www.instagram.com/pizzaria_lamparina" target="_blank">Lamparina</a></li>
-
-<li><a href="https://www.instagram.com/petiscaria_novo_sabor_" target="_blank">Novo Sabor</a></li>
-
-<li><a href="https://www.instagram.com/espetinhopraxedes" target="_blank">Espetinho Praxedes</a></li>
-
-<li><a href="https://www.instagram.com/gostinho_caseiroo" target="_blank">Gostinho Caseiro</a></li>
-
-<li><a href="https://www.instagram.com/paraiba_salgados_apodi" target="_blank">Paraíba Salgados</a></li>
-
-<li><a href="https://www.instagram.com/delivery_salgadosebolos" target="_blank">DS Salgados</a></li>
-
-<li><a href="https://www.instagram.com/churrascariaapodi" target="_blank">Churrascaria Apodi</a></li>
-
-<li><a href="https://www.instagram.com/pastelaria_matias" target="_blank">Pastelaria Matias</a></li>
-
-<li><a href="https://www.instagram.com/dgustapodi" target="_blank">Dgust</a></li>
-
-<li><a href="https://www.instagram.com/tocomfomeapodi" target="_blank">TôComFome</a></li>
-
-<li><a href="https://www.instagram.com/ochefmarmitaria_" target="_blank">O Chef</a></li>
-
-<li><a href="https://www.instagram.com/churrascariacardoso" target="_blank">Churrascaria Cardoso</a></li>
-
-<li><a href="https://www.instagram.com/pointdoacaiapodi" target="_blank">Point do Açaí</a></li>
-
-<li><a href="https://www.instagram.com/acaiflix_burguer" target="_blank">Açaíflix</a></li>
-
-<li><a href="https://www.instagram.com/imperio__acai" target="_blank">Império Açaí</a></li>
-
-<li><a href="https://www.instagram.com/acaidamariaa_" target="_blank">Açaí da Maria</a></li>
-
-<li><a href="https://www.instagram.com/kanecaoapodi" target="_blank">Kanecão</a></li>
-
-<li><a href="https://www.instagram.com/dallasgrillapodi" target="_blank">Dallas Grill</a></li>
-
-<li><a href="https://www.instagram.com/cuscuzerianogueira" target="_blank">Cuscuzeira Nogueira</a></li>
-
-<li><a href="https://www.instagram.com/churrascaria_primavera" target="_blank">Churrascaria Primavera</a></li>
-
-<li><a href="https://www.instagram.com/sushincaza" target="_blank">Sushincaza</a></li>
-
-<li><a href="https://www.instagram.com/buteco_kurrupius" target="_blank">Kurrupius</a></li>
-
-</ul>
-<div class="box">
-<p>.</p>
-</div>
-<h2 id="supermercados">Supermercados:</h2>
-<ul>
-<li><a href="https://www.instagram.com/redeoestemonteiro" target="_blank">Rede Oeste Monteiro</a></li>
-
-<li><a href="https://www.instagram.com/sertanejoatacarejo" target="_blank">Sertanejo Atacarejo</a></li>
-
-<li><a href="https://www.instagram.com/nonatoatacarejo" target="_blank">Nonato Atacarejo</a></li>
-
-<li><a href="https://www.instagram.com/queirozdeapodi" target="_blank">Queiroz</a></li>
-
-<li><a href="https://www.instagram.com/betelsupermercadoapodi" target="_blank">Supermercado Betel</a></li>
-
-<li><a href="https://www.instagram.com/casadaverdura.apodi" target="_blank">Casa da Verdura</a></li>
-
-<li><a href="https://www.instagram.com/bom_preco_apodi" target="_blank">Bom Preço</a></li>
-
-</ul>
-<div class="box">
-<p>.</p>
-</div>
-<h2 id="servicos">Serviços:</h2>
-<ul>
-<li><a href="https://www.instagram.com/cicinho_consertosepecas" target="_blank">Cicinho</a></li>
-
-<li><a href="https://www.instagram.com/wp.apodi" target="_blank">WP Apodi</a></li>
-
-<li><a href="https://www.instagram.com/nicho_solar" target="_blank">Nicho Solar</a></li>
-
-<li><a href="https://www.instagram.com/simplifique_smarthome" target="_blank">Simplifique Smarthome</a></li>
-
-<li><a href="https://www.instagram.com/mtech_energiasolar" target="_blank">Mtech</a></li>
-
-<li><a href="https://www.instagram.com/cearaautopecas1" target="_blank">Ceará Autopeças</a></li>
-
-<li><a href="https://www.instagram.com/chamagaspoty" target="_blank">Chamagás</a></li>
-
-<li><a href="https://www.instagram.com/lojaodetailer" target="_blank">Lojão Detailer</a></li>
-
-<li><a href="https://www.instagram.com/apodiimports" target="_blank">Apodi Imports</a></li>
-
-<li><a href="https://www.instagram.com/agricola_safra" target="_blank">Agrícola Safra</a></li>
-
-</ul>
-<div class="box">
-<p>.</p>
-</div>
-<h2 id="construcao">Material de Construção:</h2>
-<ul>
-<li><a href="https://www.instagram.com/construflor_" target="_blank">Construflor</a></li>
-
-<li><a href="https://www.instagram.com/grafica_torres" target="_blank">Gráfica Torres</a></li>
-
-<li><a href="https://www.instagram.com/construtoradovaleapodi" target="_blank">Construtora do Vale Apodi</a></li>
-
-</ul>
-<div class="box">
-<p>.</p>
-</div>
-<a href="https://wa.me/5584992025415" target="_blank">
-<button>Suporte + Informações</button>
-</a>
-<div class="box">
-<p>.</p>
-</div>
-<p> ☝ Clique aqui para contatar o suporte e para adicionar o seu estabelecimento no site por meio do meu WhatsApp.</p> </div>
-</p>
-<div class="box">
-<p>.</p>
-</div>
-<div class="box">
-<p>.</p>
-</div>
-<div class="box">
-<p>.</p>
-</div>
-<h3>Todos direitos reservados © Emanuel Víctor 2026</h3>
-</div>
-<!--Primeiro projeto de Matheus Lopes-->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-tag">📍 Apodi - RN</div>
+    <h1 class="hero-title">Encontre o melhor<br>de <em>Apodi-RN</em></h1>
+    <p class="hero-sub">Guia completo de comércios locais — restaurantes, mercados, serviços e muito mais.</p>
+    <div class="search-wrap">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <input type="text" id="pesquisa" placeholder="Buscar restaurante, mercado, serviço..." onkeyup="filtrar()">
+        <button class="search-btn" onclick="filtrar()">Buscar</button>
+      </div>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Estabelecimentos</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">4</span><span class="stat-label">Categorias</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Uso Gratuito</span></div>
+  </div>
 </section>
+
+<section class="cats-section">
+  <div class="container">
+    <div class="cats-grid">
+      <a href="#restaurantes" class="cat-card" data-cat="restaurantes">
+        <div class="cat-icon">🍽️</div>
+        <div class="cat-info">
+          <div class="cat-name">Restaurantes</div>
+          <div class="cat-count">13 locais</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="#supermercados" class="cat-card" data-cat="supermercados">
+        <div class="cat-icon">🛒</div>
+        <div class="cat-info">
+          <div class="cat-name">Supermercados</div>
+          <div class="cat-count">8 locais</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="#servicos" class="cat-card" data-cat="servicos">
+        <div class="cat-icon">⚙️</div>
+        <div class="cat-info">
+          <div class="cat-name">Serviços</div>
+          <div class="cat-count">9 locais</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="#construcao" class="cat-card" data-cat="construcao">
+        <div class="cat-icon">🧱</div>
+        <div class="cat-info">
+          <div class="cat-name">Construção</div>
+          <div class="cat-count">4 locais</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sobre-section">
+  <div class="container">
+    <div class="sobre-card">
+      <div class="sobre-accent"></div>
+      <div class="sobre-text">
+        <h2 class="sobre-title">Sobre o GAC</h2>
+        <p>O <strong>Guia Apodi Connect (GAC)</strong> é uma plataforma criada para dar visibilidade aos comércios da cidade de Apodi-RN. Reunimos restaurantes, supermercados, serviços e lojas de materiais de construção para que moradores e visitantes encontrem rapidamente informações e acessem as redes sociais desses negócios.</p>
+        <p>Nosso objetivo é fortalecer o comércio local e aproximar a população dos empreendimentos da cidade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="listings" id="main-content">
+  <div class="container">
+
+    <div class="section-header" id="restaurantes">
+      <div class="section-tag">🍽️</div>
+      <h2 class="section-title">Restaurantes & Petiscarias</h2>
+    </div>
+    <div class="biz-grid" id="grid-restaurantes">
+      <div class="biz-card" onclick="abrir('palh')"><div class="biz-initials">PL</div><div class="biz-info"><div class="biz-name">Palheiros</div><div class="biz-cat">Restaurante</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('espe')"><div class="biz-initials">EO</div><div class="biz-info"><div class="biz-name">Espeto de Ouro</div><div class="biz-cat">Churrascaria</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('novo')"><div class="biz-initials">NS</div><div class="biz-info"><div class="biz-name">Novo Sabor</div><div class="biz-cat">Petiscaria</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('aabb')"><div class="biz-initials">AB</div><div class="biz-info"><div class="biz-name">AABB</div><div class="biz-cat">Restaurante</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('lamp')"><div class="biz-initials">LP</div><div class="biz-info"><div class="biz-name">Lamparina</div><div class="biz-cat">Pizzaria</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('espi')"><div class="biz-initials">EP</div><div class="biz-info"><div class="biz-name">Espetinho Praxedes</div><div class="biz-cat">Espetinho</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('case')"><div class="biz-initials">GC</div><div class="biz-info"><div class="biz-name">Gostinho Caseiro</div><div class="biz-cat">Comida caseira</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('para')"><div class="biz-initials">PS</div><div class="biz-info"><div class="biz-name">Paraíba Salgados</div><div class="biz-cat">Salgados</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('dssa')"><div class="biz-initials">DS</div><div class="biz-info"><div class="biz-name">DS Salgados</div><div class="biz-cat">Salgados</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('chur')"><div class="biz-initials">CA</div><div class="biz-info"><div class="biz-name">Churrascaria Apodi</div><div class="biz-cat">Churrascaria</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('mati')"><div class="biz-initials">PM</div><div class="biz-info"><div class="biz-name">Pastelaria Matias</div><div class="biz-cat">Pastelaria</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('reil')"><div class="biz-initials">RL</div><div class="biz-info"><div class="biz-name">Rei do Lanche</div><div class="biz-cat">Lanchonete</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('dgus')"><div class="biz-initials">DG</div><div class="biz-info"><div class="biz-name">Dgust</div><div class="biz-cat">Restaurante</div></div><div class="biz-arrow">↗</div></div>
+    </div>
+
+    <div class="section-header" id="supermercados">
+      <div class="section-tag">🛒</div>
+      <h2 class="section-title">Supermercados</h2>
+    </div>
+    <div class="biz-grid" id="grid-supermercados">
+      <div class="biz-card" onclick="abrir('mont')"><div class="biz-initials" style="background:#1e3a5f;color:#90c4f0">RM</div><div class="biz-info"><div class="biz-name">Rede Oeste Monteiro</div><div class="biz-cat">Supermercado</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('sert')"><div class="biz-initials" style="background:#1e3a5f;color:#90c4f0">SA</div><div class="biz-info"><div class="biz-name">Sertanejo Atacarejo</div><div class="biz-cat">Atacarejo</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('nona')"><div class="biz-initials" style="background:#1e3a5f;color:#90c4f0">NA</div><div class="biz-info"><div class="biz-name">Nonato Atacarejo</div><div class="biz-cat">Atacarejo</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('quei')"><div class="biz-initials" style="background:#1e3a5f;color:#90c4f0">QA</div><div class="biz-info"><div class="biz-name">Queiroz Apodi</div><div class="biz-cat">Supermercado</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('bete')"><div class="biz-initials" style="background:#1e3a5f;color:#90c4f0">SB</div><div class="biz-info"><div class="biz-name">Supermercado Betel</div><div class="biz-cat">Supermercado</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('verd')"><div class="biz-initials" style="background:#1e3a5f;color:#90c4f0">CV</div><div class="biz-info"><div class="biz-name">Casa da Verdura</div><div class="biz-cat">Hortifruti</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('bompre')"><div class="biz-initials" style="background:#1e3a5f;color:#90c4f0">BP</div><div class="biz-info"><div class="biz-name">Bom Preço Apodi</div><div class="biz-cat">Supermercado</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('laje')"><div class="biz-initials" style="background:#1e3a5f;color:#90c4f0">SL</div><div class="biz-info"><div class="biz-name">Supermercado Lajedo</div><div class="biz-cat">Supermercado</div></div><div class="biz-arrow">↗</div></div>
+    </div>
+
+    <div class="section-header" id="servicos">
+      <div class="section-tag">⚙️</div>
+      <h2 class="section-title">Serviços</h2>
+    </div>
+    <div class="biz-grid" id="grid-servicos">
+      <div class="biz-card" onclick="abrir('cici')"><div class="biz-initials" style="background:#3a1e5f;color:#c490f0">CI</div><div class="biz-info"><div class="biz-name">Cicinho</div><div class="biz-cat">Consertos & Peças</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('wpap')"><div class="biz-initials" style="background:#3a1e5f;color:#c490f0">WP</div><div class="biz-info"><div class="biz-name">WP Apodi</div><div class="biz-cat">Serviços</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('nich')"><div class="biz-initials" style="background:#3a1e5f;color:#c490f0">NS</div><div class="biz-info"><div class="biz-name">Nicho Solar</div><div class="biz-cat">Energia Solar</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('simp')"><div class="biz-initials" style="background:#3a1e5f;color:#c490f0">SS</div><div class="biz-info"><div class="biz-name">Simplifique Smarthome</div><div class="biz-cat">Automação</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('mtec')"><div class="biz-initials" style="background:#3a1e5f;color:#c490f0">MT</div><div class="biz-info"><div class="biz-name">Mtech</div><div class="biz-cat">Energia Solar</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('igor')"><div class="biz-initials" style="background:#3a1e5f;color:#c490f0">LJ</div><div class="biz-info"><div class="biz-name">Lava Jato do Igor</div><div class="biz-cat">Lava Jato</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('emer')"><div class="biz-initials" style="background:#3a1e5f;color:#c490f0">ED</div><div class="biz-info"><div class="biz-name">Emerson Detailer</div><div class="biz-cat">Detailing</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('onte')"><div class="biz-initials" style="background:#3a1e5f;color:#c490f0">OT</div><div class="biz-info"><div class="biz-name">OnTech Apodi</div><div class="biz-cat">Tecnologia</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('jc')"><div class="biz-initials" style="background:#3a1e5f;color:#c490f0">JC</div><div class="biz-info"><div class="biz-name">JC Equipadora</div><div class="biz-cat">Equipamentos</div></div><div class="biz-arrow">↗</div></div>
+    </div>
+
+    <div class="section-header" id="construcao">
+      <div class="section-tag">🧱</div>
+      <h2 class="section-title">Material de Construção</h2>
+    </div>
+    <div class="biz-grid" id="grid-construcao">
+      <div class="biz-card" onclick="abrir('cons')"><div class="biz-initials" style="background:#3a2a0a;color:#f0c060">CF</div><div class="biz-info"><div class="biz-name">Construflor</div><div class="biz-cat">Construção</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('graf')"><div class="biz-initials" style="background:#3a2a0a;color:#f0c060">GT</div><div class="biz-info"><div class="biz-name">Gráfica Torres</div><div class="biz-cat">Gráfica</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('vale')"><div class="biz-initials" style="background:#3a2a0a;color:#f0c060">CV</div><div class="biz-info"><div class="biz-name">Construtora do Vale</div><div class="biz-cat">Construtora</div></div><div class="biz-arrow">↗</div></div>
+      <div class="biz-card" onclick="abrir('melo')"><div class="biz-initials" style="background:#3a2a0a;color:#f0c060">RC</div><div class="biz-info"><div class="biz-name">RedeContMelo Apodi</div><div class="biz-cat">Materiais</div></div><div class="biz-arrow">↗</div></div>
+    </div>
+
+    <!-- CATÁLOGO IA — integrado naturalmente -->
+    <div class="section-header" id="catalogo">
+      <div class="section-tag">✨</div>
+      <h2 class="section-title">O que você quer comer hoje?</h2>
+    </div>
+    <p style="color:#6a8a6a;font-size:14px;margin-bottom:24px;font-weight:400;">Descreva o que está com vontade e a IA encontra o restaurante certo pra você em Apodi.</p>
+
+    <div class="catalogo-input-wrap">
+      <div class="catalogo-box">
+        <textarea id="cat-input" placeholder="Ex: quero uma pizza bem recheada... ou: tô com fome de churrasco..." rows="2"></textarea>
+        <button class="cat-send" id="cat-btn" onclick="catalogoBuscar()">↑</button>
+      </div>
+      <div class="cat-sugestoes">
+        <button class="cat-sug" onclick="catalogoPreencher('Quero comer uma pizza hoje')">🍕 Pizza</button>
+        <button class="cat-sug" onclick="catalogoPreencher('Bateu aquela vontade de churrasco')">🥩 Churrasco</button>
+        <button class="cat-sug" onclick="catalogoPreencher('Quero um lanche rápido')">🍔 Lanche</button>
+        <button class="cat-sug" onclick="catalogoPreencher('Quero comer salgados ou petiscos')">🥟 Salgados</button>
+        <button class="cat-sug" onclick="catalogoPreencher('Tô com fome de comida caseira')">🍛 Comida caseira</button>
+        <button class="cat-sug" onclick="catalogoPreencher('Quero pastel')">🥟 Pastel</button>
+      </div>
+    </div>
+
+    <div class="cat-loading" id="cat-loading">
+      <div class="cat-dots"><span></span><span></span><span></span></div>
+      <p>Consultando os restaurantes de Apodi...</p>
+    </div>
+
+    <div class="cat-answer" id="cat-answer">
+      <div class="cat-answer-icon">🤖</div>
+      <div class="cat-answer-text" id="cat-answer-text"></div>
+    </div>
+
+    <div class="cat-grid" id="cat-grid"></div>
+
+    <div class="cat-empty" id="cat-empty">
+      <span>🤔</span>
+      <p>Não encontrei restaurantes para isso. Tente descrever de outro jeito!</p>
+    </div>
+
+    <div class="cat-error" id="cat-error">
+      <span>⚠️</span>
+      <p>Algo deu errado. Verifique sua conexão e tente novamente.</p>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-section">
+      <div class="cta-content">
+        <h3 class="cta-title">Quer cadastrar seu negócio?</h3>
+        <p class="cta-sub">Adicione seu estabelecimento ao guia e alcance mais clientes em Apodi.</p>
+        <a href="https://forms.gle/zmDVFUy1LUqqUDvs8" target="_blank" class="cta-btn">Falar com suporte & cadastrar ↗</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<div id="sidebar-overlay" onclick="fechar()"></div>
+<aside id="sidebar">
+  <button class="sidebar-close" onclick="fechar()">
+    <svg viewBox="0 0 20 20" fill="none" width="20" height="20"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+  </button>
+  <div id="conteudo"></div>
+</aside>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-badge">GAC</span>
+      <span>Guia Apodi Connect</span>
+    </div>
+    <p class="footer-copy">© 2026 Emanuel Víctor — Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="02.js"></script>
 </body>
+</html>

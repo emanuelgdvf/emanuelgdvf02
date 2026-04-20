@@ -1,0 +1,663 @@
+<html lang="pt-BR">
+<head>
+    <link rel="icon" type="jpg" href="02.ico">
+    <meta charset="UTF-8">
+    <title>GAC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="02.js"></script>
+<header>
+    <div class="topo">
+        <h1>Bem-vindo ao GAC-RN</h1>
+        <img src="02.ico" alt="logo" class="logo">
+    </div>
+</header>
+<h4>Barra de Pesquisa:</h4>
+<input type="text" id="pesquisa" placeholder="Buscar restaurante, mercado..." onkeyup="filtrar()">
+<div id="sidebar">
+    <div id="conteudo"></div>
+    <p id="fechar" onclick="fechar()">Fechar ❌</p>
+</div>
+<section>
+    <article><h1>Sobre:</h1>
+    <div class="conteudo"></div>   <p>
+    O Guia Apodi Connect (GAC) é um site criado para dar visibilidade aos<br>
+    comércios da cidade de Apodi-RN. A plataforma reúne diversos<br> 
+    estabelecimentos locais, como restaurantes, supermercados, serviços<br>
+    e lojas de materiais de construção, facilitando para que moradores<br>
+    e visitantes encontrem rapidamente informações e acessem as redes sociais<br>
+    desses negócios. O objetivo é fortalecer o comércio local e aproximar a população<br>
+    dos empreendimentos da cidade.
+</p>
+</article>
+</div>
+</div>
+    <h2>Seções:<h2>
+<nav>
+<ul>
+<li><a href="#restaurantes">Restaurantes</a></li>
+<li><a href="#supermercados">Supermercados</a></li>
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#construcao">Material de Construção</a></li>
+</ul>
+</div>
+</nav>
+    <h2 id="restaurantes">Restaurantes/Petiscarias:</h2>
+<ul>
+<li><a href="#" onclick="abrir('palh')">Palheiros</a></li>
+<li><a href="#" onclick="abrir('espe')">Espeto de Ouro</a></li>
+<li><a href="#" onclick="abrir('novo')">Novo Sabor</a></li>
+<li><a href="#" onclick="abrir('aabb')">AABB</a></li>
+<li><a href="#" onclick="abrir('lamp')">Lamparina</a></li>
+<li><a href="#" onclick="abrir('espi')">Espetinho Praxedes</a></li>
+<li><a href="#" onclick="abrir('case')">Gostinho Caseiro</a></li>
+<li><a href="#" onclick="abrir('para')">Paraíba Salgados_Apodi</a></li>
+<li><a href="#" onclick="abrir('dssa')">DS_Salgados</a></li>
+<li><a href="#" onclick="abrir('chur')">Churrascaria Apodi</a></li>
+<li><a href="#" onclick="abrir('mati')">Pastelaria_Matias</a></li>
+<li><a href="#" onclick="abrir('reil')">Rei_do_Lanche</a></li>
+<li><a href="#" onclick="abrir('dgus')">Dgust</a></li>
+<li><a href="#" onclick="abrir('quio')">Quiosque BB</a></li>
+<li><a href="#" onclick="abrir('toco')">TôComFome</a></li>
+<li><a href="#" onclick="abrir('chef')">O Chef</a></li>
+<li><a href="#" onclick="abrir('card')">Churrascaria Cardoso</a></li>
+<li><a href="#" onclick="abrir('flix')">Açaí_flix</a></li>
+<li><a href="#" onclick="abrir('impe')">Império_Açaí</a></li>
+<li><a href="#" onclick="abrir('mari')">Açaí da Maria</a></li>
+<li><a href="#" onclick="abrir('poin')">Point do Açaí</a></li>
+<li><a href="#" onclick="abrir('kane')">Kanecão</a></li>
+<li><a href="#" onclick="abrir('dall')">Dallas Grill</a></li>
+<li><a href="#" onclick="abrir('cusc')">Cuscuzeira Nogueira</a></li>
+<li><a href="#" onclick="abrir('prim')">Churrascaria_Primavera</a></li>
+<li><a href="#" onclick="abrir('sush')">SushinCaza</a></li>
+<li><a href="#" onclick="abrir('bute')">Kurrupius</a></li>
+<li><a href="#" onclick="abrir('past')">Casa_do_Pastel</a></li>
+<li><a href="#" onclick="abrir('boms')">Bom_Sabor</a></li>
+<li><a href="#" onclick="abrir('bras')">Espetinho na Brasa</a></li>
+<li><a href="#" onclick="abrir('favo')">Favorita</a></li>
+</ul>
+
+    <h2 id="supermercados">Supermercados:</h2>
+<ul>
+<li><a href="#" onclick="abrir('mont')">Rede Oeste Monteiro</a></li>
+<li><a href="#" onclick="abrir('sert')">Sertanejo Atacarejo</a></li>
+<li><a href="#" onclick="abrir('nona')">Nonato Atacarejo</a></li>
+<li><a href="#" onclick="abrir('quei')">Queiroz Apodi</a></li>
+<li><a href="#" onclick="abrir('bete')">Supermercado Betel</a></li>
+<li><a href="#" onclick="abrir('verd')">Casa da Verdura Apodi</a></li>
+<li><a href="#" onclick="abrir('bompre')">Bom Preço Apodi</a></li>
+<li><a href="#" onclick="abrir('laje')">Supermercado Lajedo</a></li>
+</ul>
+
+    <h2 id="servicos">Serviços:</h2>
+<ul>
+<li><a href="#" onclick="abrir('cici')">Cicinho</a></li>
+<li><a href="#" onclick="abrir('wpap')">WP Apodi</a></li>
+<li><a href="#" onclick="abrir('nich')">Nicho Solar</a></li>
+<li><a href="#" onclick="abrir('simp')">Simplifique Smarthome</a></li>
+<li><a href="#" onclick="abrir('mtec')">Mtech</a></li>
+<li><a href="#" onclick="abrir('cear')">Ceará Autopeças</a></li>
+<li><a href="#" onclick="abrir('cham')">Chamagáspoty</a></li>
+<li><a href="#" onclick="abrir('loja')">Lojão Detailer</a></li>
+<li><a href="#" onclick="abrir('apim')">Apodi Imports</a></li>
+<li><a href="#" onclick="abrir('agri')">Agrícola Safra</a></li>
+<li><a href="#" onclick="abrir('gord')">Lava Jato do Gordinho</a></li>
+<li><a href="#" onclick="abrir('igor')">Lava Jato do Igor</a></li>
+<li><a href="#" onclick="abrir('emer')">Emerson Detailer</a></li>
+<li><a href="#" onclick="abrir('onte')">OnTech Apodi</a></li>
+<li><a href="#" onclick="abrir('jc')">JC Equipadora</a></li>
+<li><a href="#" onclick="abrir('ftur')">FTurismo Apodi</a></li>
+<li><a href="#" onclick="abrir('uze')">Uze Multimarcas</a></li>
+<li><a href="#" onclick="abrir('topi')">TopImpress Apodi</a></li>
+<li><a href="#" onclick="abrir('bike')">Box Lava Bikes</a></li>
+<li><a href="#" onclick="abrir('idea')">Ideal Vidraçaria</a></li>
+</ul>
+
+    <h2 id="construcao">Material de Construção:</h2>
+<ul>
+<li><a href="#" onclick="abrir('cons')">Construflor</a></li>
+<li><a href="#" onclick="abrir('graf')">Gráfica Torres</a></li>
+<li><a href="#" onclick="abrir('vale')">Construtora do Vale Apodi</a></li>
+<li><a href="#" onclick="abrir('melo')">RedeContMelo Apodi</a></li>
+</ul>
+
+    <a href="https://forms.gle/zmDVFUy1LUqqUDvs8" target="_blank">
+<button>Suporte + Informações</button>
+</a>
+<p>☝ Clique aqui para contatar o suporte e para adicionar o seu<br>
+estabelecimento no site por meio do formulário.</p> </div>
+<footer><h3>© 2026 Emanuel Víctor - Todos direitos reservados.</h3></footer>
+<!--Primeiro projeto de Matheus Lopes-->
+</section>
+</body>
+
+
+
+const dados = {
+    palh: {
+        nome: "Palheiros",
+        insta: "https://instagram.com/palheirosrestaurante",
+        local: "Apodi - RN",
+        zap: "https://wa.me/5584994040800",
+        loca: "https://maps.google.com/?cid=6112973312867157753&entry=gps&g_st=aw"
+    },
+
+    espe: {
+        nome: "Espeto de Ouro",
+        insta: "https://instagram.com/espetodeouro",
+        local: "Apodi - RN",
+        zap: "https://wa.me/5584996060600",
+        loca: "https://maps.google.com/?cid=430885642499483640&entry=gps&g_st=aw"
+    },
+
+    novo: {
+        nome: "Novo Sabor",
+        insta: "https://instagram.com/petiscaria_novo_sabor_",
+        local: "Apodi - RN",
+        zap: "https://wa.me/5584994208328",
+        loca: ""
+    },
+    aabb: {
+        nome: "AABB",
+        insta: "https://instagram.com/aabbapodi",
+        local: "Apodi - RN",
+        zap: "https://wa.me/5584996340129",
+        loca: "https://maps.google.com/?cid=13606427193244036249&entry=gps&g_st=aw"
+    },
+    lamp: {
+        nome: "Lamparina",
+        insta: "https://instagram.com/pizzaria_lamparina",
+        local: "Apodi - RN",
+        zap: "https://wa.me/5584933332925",
+        loca: "https://maps.app.goo.gl/42h5pPZNM7WsLEEC8"
+    },
+    espi: {
+        nome: "Espetinho Praxedes",
+        insta: "https://instagram.com/espetinhopraxedes",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: "https://maps.app.goo.gl/u3nWQcjSMaRXNU7w7"
+    },
+    case: {
+        nome: "Gostinho Caseiro",
+        insta: "https://instagram.com/gostinho_caseiroo",
+        local: "Apodi - RN",
+        zap: "https://wa.me/5584991480186",
+        loca: ""
+    },
+    para: {
+        nome: "Paraíba Salgados_Apodi",
+        insta: "https://instagram.com/paraiba_salgados_apodi",
+        local: "Apodi - RN",
+        zap: "https://wa.me/5584996469958",
+        loca: ""
+    },
+    dssa: {
+        nome: "DS_Salgados",
+        insta: "https://instagram.com/delivery_salgadosbolos",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849494343813",
+        loca: ""
+    },
+    chur: {
+        nome: "Churrascaria Apodi",
+        insta: "https://instagram.com/churrascariaapodi",
+        local: "Apodi - RN",
+        zap: "https://wa.me/5584999663385",
+        loca: ""
+    },
+    mati: {
+        nome: "Pastelaria_Matias",
+        insta: "https://instagram.com/pastelaria_matias",
+        local: "Apodi - RN",
+        zap: "https://wa.me/5584994242757",
+        loca: ""
+    },
+    reil: {
+        nome: "Rei_do_Lanche",
+        insta: "https://instagram.com/oreidolanchepizzariaoficial",
+        local: "Apodi - RN",
+        zap: "https://wa.me/5584991915772",
+        loca: "https://maps.google.com/?cid=10914834443010279695&entry=gps&g_st=aw"
+    },
+    dgus: {
+        nome: "Dgust",
+        insta: "https://instagram.com/dgustapodi",
+        local: "Apodi - RN",
+        zap: "https://wa.me/5584991547056",
+        loca: ""
+    },
+    quio: {
+        nome: "Quiosque BB",
+        insta: "https://instagram.com/quiosquebembom",
+        local: "Apodi - RN",
+        zap: "https://wa.me/5584994924323",
+        loca: ""
+    },
+    toco: {
+        nome: "TôComFome",
+        insta: "https://instagram.com/tocomfomeapodi",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    chef: {
+        nome: "O Chef",
+        insta: "https://instagram.com/ochefmarmitaria_",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    card: {
+        nome: "Churrascaria Cardoso",
+        insta: "https://instagram.com/churrascariacardoso",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    poin: {
+        nome: "Point do Açaí",
+        insta: "https://instagram.com/pointdoacaiapodi",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    flix: {
+        nome: "Açaí_flix",
+        insta: "https://instagram.com/acaiflix_burguer",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    impe: {
+        nome: "Império_Açaí",
+        insta: "https://instagram.com/imperio_acai",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    mari: {
+        nome: "Açaí da Maria",
+        insta: "https://instagram.com/acaidamariaa_",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    kane: {
+        nome: "Kanecão",
+        insta: "https://instagram.com/kanecaoapodi",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    dall: {
+        nome: "Dallas Grill",
+        insta: "https://instagram.com/dallasgrillapodi",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    cusc: {
+        nome: "Cuscuzeira Nogueira",
+        insta: "https://www.instagram.com/cuscuzerianogueira",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    prim: {
+        nome: "Churrascaria_Primavera",
+        insta: "https://instagram.com/churrascaria_primavera",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    sush: {
+        nome: "SushinCaza",
+        insta: "https://instagram.com/sushincaza",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    bute: {
+        nome: "Kurrupius",
+        insta: "https://instagram.com/buteco_kurrupius",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    past: {
+        nome: "Casa_do_Pastel",
+        insta: "https://instagram.com/casa.do.pastel2",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    boms: {
+        nome: "Bom_Sabor",
+        insta: "https://instagram.com/pizzaria_bom_sabor_2025",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    bras: {
+        nome: "Espetinho na Brasa",
+        insta: "https://instagram.com/espetinhonabrasa8",
+        local: "Apodi - RN",
+        zap: "https://wa.me/55849",
+        loca: ""
+    },
+    favo: {
+        nome: "Favorita",
+        insta: "https://instagram.com/_pizzariafavorita",
+        local: "Apodi - RN",
+        zap: "https://wa.me/5584997059178",
+        loca: "https://maps.google.com/?cid=5437069981054668234&entry=gps&g_st=aw"
+    },
+
+
+    mont: {
+        nome: "Rede Oeste Monteiro",
+        insta: "https://www.instagram.com/redeoestemonteiro",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    sert: {
+        nome: "Sertanejo Atacarejo",
+        insta: "https://www.instagram.com/sertanejoatacarejo",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    nona: {
+        nome: "Nonato Atacarejo",
+        insta: "https://www.instagram.com/nonatoatacarejo",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    quei: {
+        nome: "Queiroz Apodi",
+        insta: "https://www.instagram.com/queirozdeapodi",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    bete: {
+        nome: "Supermercado Betel",
+        insta: "https://www.instagram.com/betelsupermercadoapodi",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    verd: {
+        nome: "Casa da Verdura Apodi",
+        insta: "https://www.instagram.com/casadaverdura.apodi",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    bompre: {
+        nome: "Bom Preço Apodi",
+        insta: "https://www.instagram.com/bom_preco_apodi",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    laje: {
+        nome: "Supermercado Lajedo",
+        insta: "https://www.instagram.com/lajedosupermercado",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+
+    cici: {
+        nome: "Cicinho",
+        insta: "https://www.instagram.com/cicinho_consertosepecas",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    wpap: {
+        nome: "WP Apodi",
+        insta: "https://www.instagram.com/wp.apodi",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    nich: {
+        nome: "Nicho Solar",
+        insta: "https://www.instagram.com/nicho_solar",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    simp: {
+        nome: "Simplifique Smarthome",
+        insta: "https://www.instagram.com/simplifique_smarthome",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    mtec: {
+        nome: "Mtech",
+        insta: "https://www.instagram.com/mtech_energiasolar",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    cear: {
+        nome: "Ceará Autopeças",
+        insta: "https://www.instagram.com/cearaautopecas1",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    cham: {
+        nome: "Chamagáspoty",
+        insta: "https://www.instagram.com/chamagaspoty",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    loja: {
+        nome: "Lojão Detailer",
+        insta: "https://www.instagram.com/lojaodetailer",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    apim: {
+        nome: "Apodi Imports",
+        insta: "https://www.instagram.com/apodiimports",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    agri: {
+        nome: "Agrícola Safra",
+        insta: "https://www.instagram.com/agricola_safra",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    gord: {
+        nome: "Lava Jato do Gordinho",
+        insta: "https://www.instagram.com/lavajatodogordinho0",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    igor: {
+        nome: "Lava Jato do Igor",
+        insta: "https://www.instagram.com/lava_jato_do_igor_",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    emer: {
+        nome: "Emerson Detailer",
+        insta: "https://www.instagram.com/emerson.detailer",
+        local: "Apodi - RN",
+        zap: "5584996651484",
+        loca: "Solidade 2"
+    },
+
+    onte: {
+        nome: "OnTech Apodi",
+        insta: "https://www.instagram.com/ontechapodi",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    jc: {
+        nome: "JC Equipadora",
+        insta: "https://www.instagram.com/jc.equipadora",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    ftur: {
+        nome: "FTurismo Apodi",
+        insta: "https://www.instagram.com/fturismo_apodi",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    uze: {
+        nome: "Uze Multimarcas",
+        insta: "https://www.instagram.com/uze_multimarcass",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    topi: {
+        nome: "TopImpress Apodi",
+        insta: "https://www.instagram.com/topimpressapodi",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    bike: {
+        nome: "Box Lava Bikes",
+        insta: "https://www.instagram.com/boxçavabikes",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    idea: {
+        nome: "Ideal Vidraçaria",
+        insta: "https://www.instagram.com/idealvidracariaa",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+
+
+    cons: {
+        nome: "Construflor",
+        insta: "https://www.instagram.com/construflor_",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    graf: {
+        nome: "Gráfica Torres",
+        insta: "https://www.instagram.com/grafica_torres",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    vale: {
+        nome: "Construtora do Vale Apodi",
+        insta: "https://www.instagram.com/construtoradovaleapodi",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+    },
+
+    melo: {
+        nome: "RedeContMelo Apodi",
+        insta: "https://www.instagram.com/redecontmeloapodi",
+        local: "Apodi - RN",
+        zap: "",
+        loca: ""
+}
+}
+
+
+function abrir(id) {
+    let item = dados[id];
+
+    document.getElementById("conteudo").innerHTML = `
+        <h2>${item.nome}</h2>
+        <p>📍 ${item.local}</p>
+
+        ${item.insta ? `<p><a href="${item.insta}" target="_blank">Instagram</a></p>` : ""}
+        ${item.zap 
+  ? `<p><a href="${item.zap}" target="_blank">WhatsApp</a></p>` 
+  : `<p class="sem-zap">WhatsApp não informado</p>`}
+        ${item.loca ? `<p><a href="${item.loca}" target="_blank">Localização</a></p>` 
+        : `<p class="sem-locazicao">Localização não informado</p>`}
+    `;
+
+    document.getElementById("sidebar").classList.add("ativo");
+}
+
+
+function fechar() {
+    document.getElementById("sidebar").classList.remove("ativo");
+}
+
+
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        const id = this.getAttribute("data-id");
+        abrir(id);
+    });
+
+function filtrar() {
+    let input = document.getElementById("pesquisa").value.toLowerCase();
+    let itens = document.querySelectorAll("ul li");
+
+    itens.forEach(li => {
+        let texto = li.innerText.toLowerCase();
+
+        if (texto.includes(input)) {
+            li.style.display = "";
+        } else {
+            li.style.display = "none";
+        }
+    });
+}
