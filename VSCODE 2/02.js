@@ -84,7 +84,7 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") fechar();
 });
 
-// ===== FILTRO =====
+
 function filtrar() {
   const input = document.getElementById("pesquisa").value.toLowerCase().trim();
   const cards = document.querySelectorAll(".biz-card");
@@ -172,7 +172,7 @@ document.getElementById("menuBtn").addEventListener("click", () => {
   document.getElementById("mobileMenu").classList.toggle("open");
 });
 
-// ===== CATÁLOGO IA =====
+
 const catalogoDados = [
   { id:'palh', nome:'Palheiros', cat:'Restaurante', tags:['almoço','refeição','comida','restaurante','prato feito','frango','carne','comida caseira'], insta:'https://instagram.com/palheirosrestaurante', zap:'https://wa.me/5584994040800', loca:'https://maps.google.com/?cid=6112973312867157753' },
   { id:'espe', nome:'Espeto de Ouro', cat:'Churrascaria', tags:['espeto','churrasco','carne','assado','churrascaria','frango','linguiça'], insta:'https://instagram.com/espetodeouro', zap:'https://wa.me/5584996060600', loca:'https://maps.google.com/?cid=430885642499483640' },
