@@ -1,5 +1,4 @@
 # Guia Apodi Connect-RN
-Este é o meu segundo site utilizando HTML,CSS e JavaScript.
 ## 🔗 Acesse
 https://gac-c6w7.onrender.com/
 
