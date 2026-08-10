@@ -1,6 +1,6 @@
 # Guia Apodi Connect-RN
 ## 🔗 Acesse
-https://gac-c6w7.onrender.com/
+https://gac-c6w7.onrender.com
 
 ## 🛠 Tecnologias
 - HTML
