@@ -26,7 +26,7 @@
 .btn-circulo {
   width: 30px;
   height: 30px;
-  border-radius: 50% !important; /* Deixa o botão perfeitamente redondo */
+  border-radius: 50% !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;

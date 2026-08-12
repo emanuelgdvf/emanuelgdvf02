@@ -477,22 +477,17 @@ document.addEventListener('click', function(e) {
   }
 });
 
-
 function setFilter(name, btn) {
-
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   
   if (btn) {
     btn.classList.add('active');
   } else {
-
     const targetBtn = document.querySelector(`.filter-btn[onclick*="'${name}'"]`);
     if (targetBtn) targetBtn.classList.add('active');
   }
 
-
-  document.body.style.filter = filters[name] || '';
-
+  document.documentElement.style.filter = filters[name] || '';
 
   const label = document.getElementById('filter-label');
   if (label) {
@@ -503,9 +498,10 @@ function setFilter(name, btn) {
       label.classList.add('show');
     }
   }
+}
 
   localStorage.setItem('gac_daltonismo', name);
-}
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const savedFilter = localStorage.getItem('gac_daltonismo') || 'none';
