@@ -50,32 +50,26 @@
           <i class="fa-solid fa-sun"></i>
         </button>
 
-      <div class="acessibilidade-container">
-        <button class="acc-btn" id="btn-daltonico" onclick="toggleDropdown(event)" title="Filtros para Daltonismo">
-          <i class="fa-solid fa-eye"></i>
-        </button>
+        <div class="acessibilidade-container">
+          <button class="acc-btn" id="btn-daltonico" onclick="toggleDropdown(event)" title="Filtros para Daltonismo">
+            <i class="fa-solid fa-eye"></i>
+          </button>
 
-        <div class="dropdown" id="dropdown">
-          <div class="dropdown-header">Filtro para daltonismo</div>
-          <button class="filter-btn active" onclick="setFilter('none', this)">Sem filtro (padrão)</button>
-          <button class="filter-btn" onclick="setFilter('protanopia', this)">Protanopia (sem vermelho)</button>
-          <button class="filter-btn" onclick="setFilter('deuteranopia', this)">Deuteranopia (sem verde)</button>
-          <button class="filter-btn" onclick="setFilter('tritanopia', this)">Tritanopia (sem azul)</button>
-          <button class="filter-btn" onclick="setFilter('achromatopsia', this)">Achromatopsia (P&B)</button>
+          <div class="dropdown" id="dropdown">
+            <div class="dropdown-header">Filtro para daltonismo</div>
+            <button class="filter-btn active" onclick="setFilter('none', this)">Sem filtro (padrão)</button>
+            <button class="filter-btn" onclick="setFilter('protanopia', this)">Protanopia (sem vermelho)</button>
+            <button class="filter-btn" onclick="setFilter('deuteranopia', this)">Deuteranopia (sem verde)</button>
+            <button class="filter-btn" onclick="setFilter('tritanopia', this)">Tritanopia (sem azul)</button>
+            <button class="filter-btn" onclick="setFilter('achromatopsia', this)">Achromatopsia (P&B)</button>
+          </div>
         </div>
-      </div>
 
-      <div id="filter-label" class="filter-label"></div>
+        <div id="filter-label" class="filter-label"></div>
+      </div>
 
       <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
         <span></span><span></span><span></span>
-      </button>
-    </div>
-
-<div id="filter-label" class="filter-label"></div>
-      </div>
-
-      <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
       </button>
     </div>
   </div>
@@ -88,6 +82,7 @@
     <a href="#construcao" class="nav-link-mobile">Construção</a>
   </div>
 </nav>
+
 <section class="hero">
   <div class="hero-bg">
     <div class="hero-orb hero-orb-1"></div>
