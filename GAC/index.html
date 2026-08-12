@@ -12,6 +12,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+<svg style="position:absolute; width:0; height:0;" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="protanopia">
+      <feColorMatrix type="matrix" values="0.567,0.433,0,0,0 0.558,0.442,0,0,0 0,0.242,0.758,0,0 0,0,0,1,0"/>
+    </filter>
+    <filter id="deuteranopia">
+      <feColorMatrix type="matrix" values="0.625,0.375,0,0,0 0.7,0.3,0,0,0 0,0.3,0.7,0,0 0,0,0,1,0"/>
+    </filter>
+    <filter id="tritanopia">
+      <feColorMatrix type="matrix" values="0.95,0.05,0,0,0 0,0.433,0.567,0,0 0,0.475,0.525,0,0 0,0,0,1,0"/>
+    </filter>
+    <filter id="achromatopsia">
+      <feColorMatrix type="matrix" values="0.299,0.587,0.114,0,0 0.299,0.587,0.114,0,0 0.299,0.587,0.114,0,0 0,0,0,1,0"/>
+    </filter>
+  </defs>
+</svg>
 
 <nav class="sticky-nav" id="navbar">
   <div class="nav-inner">
@@ -33,9 +49,30 @@
         <button class="acc-btn" id="btn-theme" onclick="alternarModoClaro()" title="Alternar Modo Claro / Escuro">
           <i class="fa-solid fa-sun"></i>
         </button>
-        <button class="acc-btn" id="btn-daltonico" onclick="alternarDaltonismo()" title="Modo Daltônico (Alto Contraste Azul)">
+
+      <div class="acessibilidade-container">
+        <button class="acc-btn" id="btn-daltonico" onclick="toggleDropdown(event)" title="Filtros para Daltonismo">
           <i class="fa-solid fa-eye"></i>
         </button>
+
+        <div class="dropdown" id="dropdown">
+          <div class="dropdown-header">Filtro para daltonismo</div>
+          <button class="filter-btn active" onclick="setFilter('none', this)">Sem filtro (padrão)</button>
+          <button class="filter-btn" onclick="setFilter('protanopia', this)">Protanopia (sem vermelho)</button>
+          <button class="filter-btn" onclick="setFilter('deuteranopia', this)">Deuteranopia (sem verde)</button>
+          <button class="filter-btn" onclick="setFilter('tritanopia', this)">Tritanopia (sem azul)</button>
+          <button class="filter-btn" onclick="setFilter('achromatopsia', this)">Achromatopsia (P&B)</button>
+        </div>
+      </div>
+
+      <div id="filter-label" class="filter-label"></div>
+
+      <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+<div id="filter-label" class="filter-label"></div>
       </div>
 
       <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
@@ -121,7 +158,7 @@
       <div class="sobre-accent"></div>
       <div class="sobre-text">
         <h2 class="sobre-title">Sobre o GAC</h2>
-        <p>O <strong>Guia Apodi Connect (GAC)</strong> é uma plataforma criada para dar visibilidade aos pequenos comércios da cidade de Apodi-RN. Reunimos restaurantes, supermercados, serviços e lojas de materiais de construção para que moradores e visitantes encontrem rapidamente informações e acessem as redes sociais desses negócios.</p>
+        <p>O <strong>Guia Apodi Connect (GAC)</strong> é uma plataforma criada para dar visibilidade aos pequenos <strong>comércios</strong> da cidade de Apodi-RN e reunir informações sobre eles. Reunimos restaurantes, supermercados, serviços e lojas de materiais de construção para que moradores e visitantes encontrem rapidamente informações e acessem as redes sociais desses negócios.</p>
         <p>Nosso objetivo é fortalecer o comércio local e aproximar a população dos empreendimentos da cidade.</p>
       </div>
     </div>
@@ -329,7 +366,7 @@
       <span>Guia Apodi Connect</span>
     </div>
     <p class="footer-copy">As informações apresentadas são baseadas em dados públicos e fornecidas pelos próprios estabelecimentos quando disponíveis. Os logotipos e marcas pertencem aos seus respectivos proprietários. Caso deseje atualizar ou remover informações, entre em contato conosco. 84 99202-5415 — © 2026 Emanuel Víctor — Todos os direitos reservados.</p>
-    <p class="footer-copy">Versão 1.0</p>
+    <p class="footer-copy">Versão 1.1</p>
   </div> </footer>
 
 <div vw class="enabled">

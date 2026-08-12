@@ -402,9 +402,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// ==========================================================
-// GERENCIADOR DE TEMAS E ACESSIBILIDADE
-// ==========================================================
 let modoClaro = false;
 let modoDaltonico = false;
 
@@ -444,13 +441,75 @@ function alternarModoClaro() {
   aplicarTemas();
 }
 
-function alternarDaltonismo() {
-  modoDaltonico = !modoDaltonico;
-  aplicarTemas();
+
+const filters = {
+  none:          '',
+  protanopia:    'url(#protanopia)',
+  deuteranopia:  'url(#deuteranopia)',
+  tritanopia:    'url(#tritanopia)',
+  achromatopsia: 'url(#achromatopsia)',
+};
+
+
+const labels = {
+  none:          '',
+  protanopia:    'Filtro ativo: Protanopia',
+  deuteranopia:  'Filtro ativo: Deuteranopia',
+  tritanopia:    'Filtro ativo: Tritanopia',
+  achromatopsia: 'Filtro ativo: Monocromático (Preto e Branco)',
+};
+
+
+function toggleDropdown(e) {
+  if (e) e.stopPropagation();
+  const dropdown = document.getElementById('dropdown');
+  if (dropdown) {
+    dropdown.classList.toggle('open');
+  }
+}
+
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.acessibilidade-container')) {
+    const dropdown = document.getElementById('dropdown');
+    if (dropdown) {
+      dropdown.classList.remove('open');
+    }
+  }
+});
+
+
+function setFilter(name, btn) {
+
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  
+  if (btn) {
+    btn.classList.add('active');
+  } else {
+
+    const targetBtn = document.querySelector(`.filter-btn[onclick*="'${name}'"]`);
+    if (targetBtn) targetBtn.classList.add('active');
+  }
+
+
+  document.body.style.filter = filters[name] || '';
+
+
+  const label = document.getElementById('filter-label');
+  if (label) {
+    if (name === 'none' || !labels[name]) {
+      label.classList.remove('show');
+    } else {
+      label.textContent = labels[name];
+      label.classList.add('show');
+    }
+  }
+
+  localStorage.setItem('gac_daltonismo', name);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  modoClaro = localStorage.getItem('gac_light') === 'true';
-  modoDaltonico = localStorage.getItem('gac_daltonico') === 'true';
-  aplicarTemas();
+  const savedFilter = localStorage.getItem('gac_daltonismo') || 'none';
+  if (savedFilter !== 'none') {
+    setFilter(savedFilter);
+  }
 });
